@@ -11,7 +11,6 @@ class Solution:
     while l <= r:
       if nums[l] + nums[r] <= target:
         ans += pow(2, r - l, kMod)
-        l += 1
       else:
         r -= 1
 
